@@ -1,0 +1,20 @@
+{% extends "padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    <h1>Cliente </h1>
+    
+    
+        <form action="/AppTerceraPreEntregaEscobarMatias/buscar/" method="GET">
+       
+            <input type="number" name="dni" id="dni" placeholder="Ingrese su DNI...">
+    
+            <input type="submit" value="Buscar">
+    
+        </form>
+
+    
+ 
+
+{% endblock %}

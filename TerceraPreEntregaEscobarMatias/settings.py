@@ -55,7 +55,7 @@ ROOT_URLCONF = 'TerceraPreEntregaEscobarMatias.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["AppTerceraEntregaEscobarMatias/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
