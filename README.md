@@ -9,4 +9,4 @@ Se puede probar primeramente cargando la pagina, luego se puede probar la carga 
 
 Se puede probar la busqueda de datos en la Base de Datos, accediendo al boton "búsqueda de Clientes"
 
-para corroborar los datos guardados se puede ingresar al archivo db.sqlite
+Para corroborar los datos guardados se puede ingresar al archivo db.sqlite
