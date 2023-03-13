@@ -22,12 +22,13 @@
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container px-5">
                 
-                <a class="navbar-brand" href="{% url "inicio"%}">Inicio</a>
-                <a class="navbar-brand" href="{% url "cliente"%}">Cliente</a>
-                <a class="navbar-brand" href="{% url "vendedor"%}">Vendedor</a>
-                <a class="navbar-brand" href="{% url "proveedor"%}">Proveedor</a>
-                <a class="navbar-brand" href="{% url "patrocinante"%}">Patrocinante</a>
-                <a class="btn btn-primary" href="{% url "busquedaCliente"%}">BUSCAR CLIENTE</a>
+                <a class="navbar-brand" href="{% url "AppTerceraPreEntregaEscobarMatias:inicio"%}">Inicio</a>
+                <a class="navbar-brand" href="{% url "AppTerceraPreEntregaEscobarMatias:cliente"%}">Cliente</a>
+                <a class="navbar-brand" href="{% url "AppTerceraPreEntregaEscobarMatias:vendedor"%}">Vendedor</a>
+                <a class="navbar-brand" href="{% url "AppTerceraPreEntregaEscobarMatias:proveedor"%}">Proveedor</a>
+                <a class="navbar-brand" href="{% url "AppTerceraPreEntregaEscobarMatias:patrocinante"%}">Patrocinante</a>
+                <a class="btn btn-primary" href="{% url "AppTerceraPreEntregaEscobarMatias:busquedaCliente"%}">BUSCAR CLIENTE</a>
+                <a class="btn btn-primary" href="{% url "AppTerceraPreEntregaEscobarMatias:leerCliente"%}">LEER CLIENTE</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     

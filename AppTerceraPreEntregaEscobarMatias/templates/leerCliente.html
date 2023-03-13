@@ -1,0 +1,31 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<body>
+    
+    {% for p in cliente %}
+    <li> {{p}} </li>
+
+
+        <a class="btn btn-primary" href="{% url "AppTerceraPreEntregaEscobarMatias:eliminarCliente" p.nombre %}">ELIMINAR CLIENTE</a>
+        <a class="btn btn-primary" href="{% url "AppTerceraPreEntregaEscobarMatias:editarCliente" p.nombre %}">EDITAR CLIENTE</a>
+    
+    {% endfor %}
+<br>
+
+</body>
+
+            <a class="btn btn-primary" href="{% url "AppTerceraPreEntregaEscobarMatias:cliente"%}">AGREGAR CLIENTE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                
+            </div>
+        </div>
+    </nav>
+
+{% endblock %}
+
