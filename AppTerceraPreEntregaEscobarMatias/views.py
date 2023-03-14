@@ -174,14 +174,14 @@ def editarCliente(request, cliente_nombre):
 
             return render(request, "inicio.html")
         
-        else:
-            miFormulario= ClienteFormulario(initial={"nombre": cliente.nombre, 
+    else:
+        miFormulario= ClienteFormulario(initial={"nombre": cliente.nombre, 
                                                      "apellido":cliente.apellido, 
                                                      "dni":cliente.dni, 
                                                      "email":cliente.email, 
                                                      "profesion": cliente.profesion})
             
-            return render (request, "editarCliente.html",
+        return render (request, "editarCliente.html",
                             {"miFormulario":miFormulario, "cliente_nombre":cliente_nombre})
 
 
